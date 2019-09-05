@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "8b9c2515-9b90-4f09-8f85-0cd748b47a00",
+		"name": "Bearer1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://httpbin.org/bearer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer  foo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/bearer",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"bearer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
